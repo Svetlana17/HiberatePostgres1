@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.sample.EntityProviderFirmaEntity">
+        <table name="provider_firma" schema="public" catalog="postgres"/>
+        <attributes>
+            <id name="idProviderFirma">
+                <column name="id_provider_firma" precision="-1"/>
+            </id>
+            <basic name="nameProviderFirma">
+                <column name="name_provider_firma" nullable="false" length="30"/>
+            </basic>
+            <basic name="volume">
+                <column name="volume" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="data">
+                <column name="data" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

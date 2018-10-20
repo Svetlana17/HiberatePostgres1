@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.sample.EntityProductsEntity">
+        <table name="products" schema="public" catalog="postgres"/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="productname">
+                <column name="productname" length="30"/>
+            </basic>
+            <basic name="company">
+                <column name="company" length="20"/>
+            </basic>
+            <basic name="productcount">
+                <column name="productcount" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="price">
+                <column name="price" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

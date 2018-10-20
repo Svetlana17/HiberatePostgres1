@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.sample.EntityPostsEntity">
+        <table name="posts" schema="public" catalog="postgres"/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="title">
+                <column name="title" nullable="false" length="30"/>
+            </basic>
+            <basic name="body">
+                <column name="body" nullable="false"/>
+            </basic>
+            <basic name="tags">
+                <column name="tags" nullable="false" length="10"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

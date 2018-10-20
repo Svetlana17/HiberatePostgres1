@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.sample.EntityPotrebitelEntity">
+        <table name="potrebitel" schema="public" catalog="postgres"/>
+        <attributes>
+            <id name="idPotrebitel">
+                <column name="id_potrebitel" precision="-1"/>
+            </id>
+            <basic name="namePotrebitel">
+                <column name="name_potrebitel" nullable="false" length="30"/>
+            </basic>
+            <basic name="values">
+                <column name="values" nullable="false" length="30"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
